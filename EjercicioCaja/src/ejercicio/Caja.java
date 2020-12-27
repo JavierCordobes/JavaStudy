@@ -20,7 +20,7 @@ public class Caja {
 	}
 	
 	public int calcularVolumen() {
-		return largo * ancho *alto;
+		return largo * ancho * alto;
 	}
 	
 	

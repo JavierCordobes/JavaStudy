@@ -7,12 +7,17 @@ public class Persona {
 	
 	public Persona (String name) {
 		this.name=name;
+		
 		// incrementar el contador de personas
 		Persona.contadorPersonas++; 
+		
 		// asignar el contador a idPersonas
-		idPersona = Persona.contadorPersonas;
+		this.idPersona = Persona.contadorPersonas;
 	}
 
+	
+	
+	
 	public int getIdPersona() {
 		return idPersona;
 	}
