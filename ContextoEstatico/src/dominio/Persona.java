@@ -4,20 +4,17 @@ public class Persona {
 	private int idPersona;
 	private String name;
 	private static int contadorPersonas;
-	
-	public Persona (String name) {
-		this.name=name;
-		
+
+	public Persona(String name) {
+		this.name = name;
+
 		// incrementar el contador de personas
-		Persona.contadorPersonas++; 
-		
+		Persona.contadorPersonas++;
+
 		// asignar el contador a idPersonas
 		this.idPersona = Persona.contadorPersonas;
 	}
 
-	
-	
-	
 	public int getIdPersona() {
 		return idPersona;
 	}
@@ -46,7 +43,5 @@ public class Persona {
 	public String toString() {
 		return "Persona [idPersona=" + idPersona + ", name=" + name + "]";
 	}
-	
-	
-	
+
 }
