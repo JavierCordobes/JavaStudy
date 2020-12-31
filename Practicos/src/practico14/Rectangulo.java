@@ -1,4 +1,4 @@
-package practico10.E2;
+package practico14;
 
 public class Rectangulo {
 	int largo;

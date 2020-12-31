@@ -25,11 +25,7 @@ public class ColeccionEnteros {
 		for (int i = 0; i < this.arreglo.length; i++) {
 			if (this.arreglo[i] == valor) {
 				existe = true;
-				System.out.println("Existe en la posicion " + i);
 			}
-		}
-		if (existe == false) {
-			System.out.println("No existe valor " + valor);
 		}
 		return existe;
 	}
@@ -41,7 +37,6 @@ public class ColeccionEnteros {
 				maximo = this.arreglo[i];
 			}
 		}
-		System.out.println("El maximo valor es el " + maximo);
 		return maximo;
 	}
 
@@ -66,10 +61,8 @@ public class ColeccionEnteros {
 		for (int i = 0; i < this.arreglo.length; i++) {
 			suma = this.arreglo[i] + suma;
 			contador++;
-
 		}
 		double promedio = (double) suma / contador;
-		System.out.println("El promedio es " + promedio);
 		return promedio;
 	}
 
@@ -77,7 +70,7 @@ public class ColeccionEnteros {
 		int[] aux = new int[this.arreglo.length];
 		int j = 0;
 		for (int i = this.arreglo.length - 1; i >= 0; i--) {
-			
+
 			aux[j] = this.arreglo[i];
 			j++;
 		}
@@ -102,13 +95,8 @@ public class ColeccionEnteros {
 			for (int j = i + 1; j < this.arreglo.length; j++) {
 				if (arreglo[j] == aux) {
 					hayRepetidos = true;
-					System.out.println("Esta repetido el numero " + aux);
-
 				}
 			}
-		}
-		if (hayRepetidos == false) {
-			System.out.println("No hay repetidos");
 		}
 		return hayRepetidos;
 	}
