@@ -14,7 +14,7 @@ public class ColeccionRectangulos {
 			arreglo[i] = (new Rectangulo((int) (Math.random() * 11), (int) (Math.random() * 9)));
 
 		}
-	}
+	} 
 
 	public int posicionRectanguloMayorArea() {
 		int mayorArea = 0;
