@@ -39,4 +39,22 @@ public class ManejoArchivos {
 			e.printStackTrace(System.out);
 		}
 	}
+
+	public static void leerArchivo(String nombreArchivo) {
+		var archivo = new File(nombreArchivo);
+		try {
+			var entrada = new BufferedReader(new FileReader(archivo));
+			var lectura = entrada.readLine();
+			while (lectura != null) {
+				System.out.println(lectura);
+				lectura = entrada.readLine();
+			}
+			entrada.close();
+		} catch (FileNotFoundException e) {
+
+			e.printStackTrace(System.out);
+		} catch (IOException e) {
+			e.printStackTrace(System.out);
+		}
+	}
 }
